@@ -24,21 +24,19 @@
 	<string>2.1.0</string>
 	<key>NSPrincipalClass</key>
 	<string>OEGameCoreController</string>
-	<key>OESystemIdentifiers</key>
-	<array>
-		<string>openemu.system.jaguar</string>
-	</array>
+	<key>OEGameCoreClass</key>
+	<string>JaguarGameCore</string>
 	<key>OEGameCorePlayerCount</key>
 	<string>2</string>
 	<key>OEProjectURL</key>
 	<string>http://icculus.org/virtualjaguar/</string>
-	<key>OEGameCoreClass</key>
-	<string>JaguarGameCore</string>
-	<key>SUFeedURL</key>
-	<string>http://openemu.org/updater/virtualjaguar_appcast.xml</string>
+	<key>OESystemIdentifiers</key>
+	<array>
+		<string>openemu.system.jaguar</string>
+	</array>
 	<key>SUEnableAutomaticChecks</key>
 	<string>1</string>
-	<key>SUPublicDSAKeyFile</key>
-	<string>dsa_pub.pem</string>
+	<key>SUFeedURL</key>
+	<string>https://raw.github.com/OpenEmu/OpenEmu-Update/master/virtualjaguar_appcast.xml</string>
 </dict>
 </plist>
