@@ -28,7 +28,7 @@ static JaguarGameCore *current;
     if (self = [super init]) {
         videoWidth = 1024;
         videoHeight = 512;
-        sampleRate = DAC_AUDIO_RATE;
+        sampleRate = 48000;
         buffer = new uint32_t[videoWidth * videoHeight];
     }
     
@@ -175,10 +175,10 @@ void audio_callback_batch(uint16_t *buff, int len)
     uint8_t *currentController;
     
     if (player == 1) {
-        currentController = joypad_0_buttons;
+        currentController = joypad0Buttons;
     }
     else {
-        currentController = joypad_1_buttons;
+        currentController = joypad1Buttons;
     }
     
     // special cases to prevent invalid inputs
@@ -209,10 +209,10 @@ void audio_callback_batch(uint16_t *buff, int len)
     uint8_t *currentController;
     
     if (player == 1) {
-        currentController = joypad_0_buttons;
+        currentController = joypad0Buttons;
     }
     else {
-        currentController = joypad_1_buttons;
+        currentController = joypad1Buttons;
     }
     
     int index = [self getIndexForOEJaguarButton:button];

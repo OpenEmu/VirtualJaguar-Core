@@ -22,6 +22,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		941CAB691995EC5F0023BAF0 /* dac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 941CAB681995EC5F0023BAF0 /* dac.cpp */; };
+		941CAB6C1995F1B20023BAF0 /* jagbios2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 941CAB6A1995F1B20023BAF0 /* jagbios2.cpp */; };
 		980BE278170989FE00511340 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980BE277170989FE00511340 /* Cocoa.framework */; };
 		980BE282170989FE00511340 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 980BE280170989FE00511340 /* InfoPlist.strings */; };
 		980BE28B17098AB100511340 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980BE28A17098AB100511340 /* OpenGL.framework */; };
@@ -30,7 +32,6 @@
 		98951250170AD43E002E2694 /* cdintf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98951202170AD43E002E2694 /* cdintf.cpp */; };
 		98951251170AD43E002E2694 /* cdrom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98951204170AD43E002E2694 /* cdrom.cpp */; };
 		98951252170AD43E002E2694 /* crc32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98951206170AD43E002E2694 /* crc32.cpp */; };
-		98951253170AD43E002E2694 /* dac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 98951209170AD43E002E2694 /* dac.mm */; };
 		98951254170AD43E002E2694 /* dsp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9895120B170AD43E002E2694 /* dsp.cpp */; };
 		98951255170AD43E002E2694 /* eeprom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9895120D170AD43E002E2694 /* eeprom.cpp */; };
 		98951256170AD43E002E2694 /* event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9895120F170AD43E002E2694 /* event.cpp */; };
@@ -54,8 +55,6 @@
 		98951270170AD43E002E2694 /* state.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98951242170AD43E002E2694 /* state.cpp */; };
 		98951271170AD43E002E2694 /* tom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98951244170AD43E002E2694 /* tom.cpp */; };
 		98951272170AD43E002E2694 /* universalhdr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98951247170AD43E002E2694 /* universalhdr.cpp */; };
-		98951273170AD43E002E2694 /* unzip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98951249170AD43E002E2694 /* unzip.cpp */; };
-		98951274170AD43E002E2694 /* virtualjaguar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9895124C170AD43E002E2694 /* virtualjaguar.cpp */; };
 		98951275170AD43E002E2694 /* wavetable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9895124D170AD43E002E2694 /* wavetable.cpp */; };
 		98B77B5C170999C700F2B5A6 /* JaguarGameCore.mm in Sources */ = {isa = PBXBuildFile; fileRef = 98B77B5B170999C700F2B5A6 /* JaguarGameCore.mm */; };
 		EB24D82918DF5DB400F9C75A /* build68k.c in Sources */ = {isa = PBXBuildFile; fileRef = EB24D80218DF5CE900F9C75A /* build68k.c */; };
@@ -89,6 +88,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		941CAB681995EC5F0023BAF0 /* dac.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dac.cpp; sourceTree = "<group>"; };
+		941CAB6A1995F1B20023BAF0 /* jagbios2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = jagbios2.cpp; sourceTree = "<group>"; };
+		941CAB6B1995F1B20023BAF0 /* jagbios2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jagbios2.h; sourceTree = "<group>"; };
 		980BE274170989FE00511340 /* VirtualJaguar.oecoreplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VirtualJaguar.oecoreplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		980BE277170989FE00511340 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		980BE27A170989FE00511340 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -108,7 +110,6 @@
 		98951206170AD43E002E2694 /* crc32.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = crc32.cpp; sourceTree = "<group>"; };
 		98951207170AD43E002E2694 /* crc32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crc32.h; sourceTree = "<group>"; };
 		98951208170AD43E002E2694 /* cry2rgb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cry2rgb.h; sourceTree = "<group>"; };
-		98951209170AD43E002E2694 /* dac.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = dac.mm; sourceTree = "<group>"; };
 		9895120A170AD43E002E2694 /* dac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dac.h; sourceTree = "<group>"; };
 		9895120B170AD43E002E2694 /* dsp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dsp.cpp; sourceTree = "<group>"; };
 		9895120C170AD43E002E2694 /* dsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dsp.h; sourceTree = "<group>"; };
@@ -154,13 +155,10 @@
 		98951243170AD43E002E2694 /* state.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = state.h; sourceTree = "<group>"; };
 		98951244170AD43E002E2694 /* tom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tom.cpp; sourceTree = "<group>"; };
 		98951245170AD43E002E2694 /* tom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tom.h; sourceTree = "<group>"; };
-		98951246170AD43E002E2694 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
 		98951247170AD43E002E2694 /* universalhdr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = universalhdr.cpp; sourceTree = "<group>"; };
 		98951248170AD43E002E2694 /* universalhdr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = universalhdr.h; sourceTree = "<group>"; };
 		98951249170AD43E002E2694 /* unzip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = unzip.cpp; sourceTree = "<group>"; };
 		9895124A170AD43E002E2694 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
-		9895124B170AD43E002E2694 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
-		9895124C170AD43E002E2694 /* virtualjaguar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = virtualjaguar.cpp; sourceTree = "<group>"; };
 		9895124D170AD43E002E2694 /* wavetable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wavetable.cpp; sourceTree = "<group>"; };
 		9895124E170AD43E002E2694 /* wavetable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wavetable.h; sourceTree = "<group>"; };
 		98951276170AD6C4002E2694 /* SDL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDL.h; sourceTree = "<group>"; };
@@ -282,7 +280,7 @@
 				98951206170AD43E002E2694 /* crc32.cpp */,
 				98951207170AD43E002E2694 /* crc32.h */,
 				98951208170AD43E002E2694 /* cry2rgb.h */,
-				98951209170AD43E002E2694 /* dac.mm */,
+				941CAB681995EC5F0023BAF0 /* dac.cpp */,
 				9895120A170AD43E002E2694 /* dac.h */,
 				9895120B170AD43E002E2694 /* dsp.cpp */,
 				9895120C170AD43E002E2694 /* dsp.h */,
@@ -298,6 +296,8 @@
 				98951216170AD43E002E2694 /* gpu.h */,
 				98951217170AD43E002E2694 /* jagbios.cpp */,
 				98951218170AD43E002E2694 /* jagbios.h */,
+				941CAB6A1995F1B20023BAF0 /* jagbios2.cpp */,
+				941CAB6B1995F1B20023BAF0 /* jagbios2.h */,
 				98951219170AD43E002E2694 /* jagcdbios.cpp */,
 				9895121A170AD43E002E2694 /* jagcdbios.h */,
 				9895121B170AD43E002E2694 /* jagdasm.cpp */,
@@ -329,13 +329,10 @@
 				98951243170AD43E002E2694 /* state.h */,
 				98951244170AD43E002E2694 /* tom.cpp */,
 				98951245170AD43E002E2694 /* tom.h */,
-				98951246170AD43E002E2694 /* types.h */,
 				98951247170AD43E002E2694 /* universalhdr.cpp */,
 				98951248170AD43E002E2694 /* universalhdr.h */,
 				98951249170AD43E002E2694 /* unzip.cpp */,
 				9895124A170AD43E002E2694 /* unzip.h */,
-				9895124B170AD43E002E2694 /* version.h */,
-				9895124C170AD43E002E2694 /* virtualjaguar.cpp */,
 				9895124D170AD43E002E2694 /* wavetable.cpp */,
 				9895124E170AD43E002E2694 /* wavetable.h */,
 			);
@@ -473,12 +470,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				941CAB691995EC5F0023BAF0 /* dac.cpp in Sources */,
 				98B77B5C170999C700F2B5A6 /* JaguarGameCore.mm in Sources */,
 				9895124F170AD43E002E2694 /* blitter.cpp in Sources */,
 				98951250170AD43E002E2694 /* cdintf.cpp in Sources */,
 				98951251170AD43E002E2694 /* cdrom.cpp in Sources */,
 				98951252170AD43E002E2694 /* crc32.cpp in Sources */,
-				98951253170AD43E002E2694 /* dac.mm in Sources */,
 				98951254170AD43E002E2694 /* dsp.cpp in Sources */,
 				98951255170AD43E002E2694 /* eeprom.cpp in Sources */,
 				98951256170AD43E002E2694 /* event.cpp in Sources */,
@@ -487,6 +484,7 @@
 				98951259170AD43E002E2694 /* gpu.cpp in Sources */,
 				9895125A170AD43E002E2694 /* jagbios.cpp in Sources */,
 				9895125B170AD43E002E2694 /* jagcdbios.cpp in Sources */,
+				941CAB6C1995F1B20023BAF0 /* jagbios2.cpp in Sources */,
 				9895125C170AD43E002E2694 /* jagdasm.cpp in Sources */,
 				9895125D170AD43E002E2694 /* jagdevcdbios.cpp in Sources */,
 				9895125E170AD43E002E2694 /* jagstub1bios.cpp in Sources */,
@@ -502,8 +500,6 @@
 				98951270170AD43E002E2694 /* state.cpp in Sources */,
 				98951271170AD43E002E2694 /* tom.cpp in Sources */,
 				98951272170AD43E002E2694 /* universalhdr.cpp in Sources */,
-				98951273170AD43E002E2694 /* unzip.cpp in Sources */,
-				98951274170AD43E002E2694 /* virtualjaguar.cpp in Sources */,
 				98951275170AD43E002E2694 /* wavetable.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -631,6 +627,7 @@
 					"\"$(SRCROOT)/VirtualJaguar/src\"",
 					"$(TARGET_BUILD_DIR)",
 				);
+				OTHER_CFLAGS = "-D__GCCUNIX__";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = oecoreplugin;
 			};
@@ -653,6 +650,7 @@
 					"\"$(SRCROOT)/VirtualJaguar/src\"",
 					"$(TARGET_BUILD_DIR)",
 				);
+				OTHER_CFLAGS = "-D__GCCUNIX__";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = oecoreplugin;
 			};
