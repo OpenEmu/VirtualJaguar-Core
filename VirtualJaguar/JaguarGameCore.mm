@@ -87,11 +87,6 @@ static JaguarGameCore *current;
         buffer[i] = 0xFF00FFFF;
 }
 
-void audio_callback_batch(uint16_t *buff, int len)
-{
-    [[current ringBufferAtIndex:0] write:buff maxLength:len];
-}
-
 - (void)executeFrame
 {
     [self executeFrameSkippingFrame:NO];
