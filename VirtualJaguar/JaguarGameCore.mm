@@ -31,6 +31,8 @@ static JaguarGameCore *current;
         videoHeight = 512;
         sampleRate = 48000;
         buffer = new uint32_t[videoWidth * videoHeight];
+        sampleBuffer = (uint16_t *)malloc(2048 * sizeof(uint16_t));
+        memset(sampleBuffer, 0, 2048 * sizeof(uint16_t));
     }
     
     current = self;
@@ -72,6 +74,9 @@ static JaguarGameCore *current;
 - (void)executeFrameSkippingFrame:(BOOL)skip
 {
     JaguarExecuteNew();
+    
+    SDLSoundCallback(NULL, sampleBuffer, 2048*2);
+    [[current ringBufferAtIndex:0] write:sampleBuffer maxLength:2048*2];
 }
 
 - (void)initVideo
@@ -114,6 +119,7 @@ void audio_callback_batch(uint16_t *buff, int len)
 - (void)dealloc
 {
     free(buffer);
+    free(sampleBuffer);
 }
 
 - (BOOL)saveStateToFileAtPath:(NSString *)fileName
