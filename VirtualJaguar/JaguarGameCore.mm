@@ -4,6 +4,7 @@
 #import "jaguar.h"
 #import "file.h"
 #import "jagbios.h"
+#import "jagbios2.h"
 #include "memory.h"
 #include "log.h"
 #include "tom.h"
@@ -58,7 +59,7 @@ static JaguarGameCore *current;
 	vjs.renderType = 0;
 	
 	JaguarInit();                                             // set up hardware
-	memcpy(jagMemSpace + 0xE00000, jaguarBootROM, 0x20000);   // Use the stock BIOS
+    memcpy(jagMemSpace + 0xE00000, (vjs.biosType == BT_K_SERIES ? jaguarBootROM : jaguarBootROM2), 0x20000); // Use the stock BIOS
 	[self initVideo];
 	SET32(jaguarMainRAM, 0, 0x00200000);                      // set up stack
 	JaguarLoadFile((char *)[path UTF8String]);                // load rom
