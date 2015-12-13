@@ -71,7 +71,7 @@ static JaguarGameCore *current;
     
 }
 
-- (void)executeFrameSkippingFrame:(BOOL)skip
+- (void)executeFrame
 {
     JaguarExecuteNew();
     
@@ -85,11 +85,6 @@ static JaguarGameCore *current;
     JaguarSetScreenBuffer(buffer);
     for (int i = 0; i < videoWidth * videoHeight; ++i)
         buffer[i] = 0xFF00FFFF;
-}
-
-- (void)executeFrame
-{
-    [self executeFrameSkippingFrame:NO];
 }
 
 - (NSUInteger)audioBitDepth
@@ -115,16 +110,6 @@ static JaguarGameCore *current;
 {
     free(buffer);
     free(sampleBuffer);
-}
-
-- (BOOL)saveStateToFileAtPath:(NSString *)fileName
-{
-    return NO;
-}
-
-- (BOOL)loadStateFromFileAtPath:(NSString *)fileName
-{
-    return NO;
 }
 
 - (OEIntRect)screenRect
