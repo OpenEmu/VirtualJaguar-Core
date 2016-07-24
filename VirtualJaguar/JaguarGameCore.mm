@@ -99,6 +99,8 @@ static JaguarGameCore *current;
 - (void)stopEmulation
 {
     JaguarDone();
+
+    [super stopEmulation];
 }
 
 - (void)resetEmulation
