@@ -214,6 +214,7 @@
 				980BE275170989FE00511340 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		980BE275170989FE00511340 /* Products */ = {
 			isa = PBXGroup;

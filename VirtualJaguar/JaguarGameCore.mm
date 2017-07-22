@@ -124,9 +124,9 @@ static JaguarGameCore *current;
     return OEIntSizeMake(videoWidth, videoHeight);
 }
 
-- (const void *)videoBuffer
+- (const void *)getVideoBufferWithHint:(void *)hint
 {
-    return buffer;
+    return buffer = (uint32_t *)(hint ?: buffer);
 }
 
 - (GLenum)pixelFormat
@@ -137,11 +137,6 @@ static JaguarGameCore *current;
 - (GLenum)pixelType
 {
     return GL_UNSIGNED_INT_8_8_8_8;
-}
-
-- (GLenum)internalPixelFormat
-{
-    return GL_RGB8;
 }
 
 - (double)audioSampleRate
