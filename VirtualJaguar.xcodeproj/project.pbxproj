@@ -100,7 +100,7 @@
 		980BE281170989FE00511340 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		980BE283170989FE00511340 /* VirtualJaguar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VirtualJaguar-Prefix.pch"; sourceTree = "<group>"; };
 		980BE28A17098AB100511340 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		980BE28C17098ABA00511340 /* OpenEmuBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenEmuBase.framework; path = "../../../../Library/Developer/Xcode/DerivedData/OpenEmu-bhfveylavlxwbkddelpdvazebykd/Build/Products/Debug/OpenEmuBase.framework"; sourceTree = "<group>"; };
+		980BE28C17098ABA00511340 /* OpenEmuBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEmuBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98951200170AD43E002E2694 /* blitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = blitter.cpp; sourceTree = "<group>"; };
 		98951201170AD43E002E2694 /* blitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blitter.h; sourceTree = "<group>"; };
 		98951202170AD43E002E2694 /* cdintf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cdintf.cpp; sourceTree = "<group>"; };
@@ -422,7 +422,7 @@
 			};
 			buildConfigurationList = 980BE26F170989FE00511340 /* Build configuration list for PBXProject "VirtualJaguar" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
