@@ -77,6 +77,13 @@ STATIC_INLINE void m68k_setstopped(int stop)
 #endif
 }
 
+extern unsigned int m68k_read_memory_8(unsigned int address);
+extern unsigned int m68k_read_memory_16(unsigned int address);
+extern unsigned int m68k_read_memory_32(unsigned int address);
+extern void m68k_write_memory_8(unsigned int address, unsigned int value);
+extern void m68k_write_memory_16(unsigned int address, unsigned int value);
+extern void m68k_write_memory_32(unsigned int address, unsigned int value);
+
 STATIC_INLINE void m68k_do_rts(void)
 {
 	m68k_setpc(m68k_read_memory_32(m68k_areg(regs, 7)));
