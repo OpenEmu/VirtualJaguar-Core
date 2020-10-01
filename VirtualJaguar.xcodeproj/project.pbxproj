@@ -164,7 +164,7 @@
 		98951276170AD6C4002E2694 /* SDL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDL.h; sourceTree = "<group>"; };
 		98B77B5A170999C700F2B5A6 /* JaguarGameCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JaguarGameCore.h; sourceTree = "<group>"; };
 		98B77B5B170999C700F2B5A6 /* JaguarGameCore.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JaguarGameCore.mm; sourceTree = "<group>"; };
-		98EFD839170B4E4100E4C50D /* OEJaguarSystemResponderClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OEJaguarSystemResponderClient.h; path = ../../OpenEmu/Jaguar/OEJaguarSystemResponderClient.h; sourceTree = "<group>"; };
+		98EFD839170B4E4100E4C50D /* OEJaguarSystemResponderClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OEJaguarSystemResponderClient.h; path = ../../OpenEmu/SystemPlugins/Jaguar/OEJaguarSystemResponderClient.h; sourceTree = "<group>"; };
 		EB24D80218DF5CE900F9C75A /* build68k.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = build68k.c; sourceTree = "<group>"; };
 		EB24D80318DF5CE900F9C75A /* cpudefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cpudefs.h; sourceTree = "<group>"; };
 		EB24D80418DF5CE900F9C75A /* cpuextra.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cpuextra.c; sourceTree = "<group>"; };
